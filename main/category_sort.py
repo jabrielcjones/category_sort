@@ -36,34 +36,3 @@ def _sort(category_graph, current_category, visited, proper_json_output):
         _sort(category_graph, neighbor, visited, proper_json_output)
 
     proper_json_output.append(current_category)
-
-
-input_json = [
-    {
-        'name': 'Watches',
-        'id': 74,
-        'parent_id': 87
-    },
-    {
-        'name': 'Men',
-        'id': 450,
-        'parent_id': None
-    },
-    {
-        'name': 'Men',
-        'id': 9,
-        'parent_id': 87
-    },
-    {
-        'name': 'Men',
-        'id': 87,
-        'parent_id': 450
-    },
-    {
-        'name': 'Accessories',
-        'id': 25,
-        'parent_id': 450
-    }
-]
-
-print(_create_category_graph(input_json))

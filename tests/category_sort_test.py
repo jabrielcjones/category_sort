@@ -15,6 +15,7 @@ with open('sample_inputs.yml', 'r') as stream:
         print(err)
         exit()
 
+
 class TestCreateCategoryGraph:
 
     def test_one(self):
