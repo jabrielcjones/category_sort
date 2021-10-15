@@ -77,3 +77,20 @@ Sample Output
   }
 ]
 ```
+
+
+Run tests
+
+```zsh
+python -m venv venv
+
+. venv/bin/activate
+
+python -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+cd tests/
+
+pytest category_sort_test.py -vv
+```
